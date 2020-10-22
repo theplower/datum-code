@@ -1,0 +1,5 @@
+In the first we aimed to build an app to translate the fingerspelling and pronounce it.
+but unfortunatly we didn't manage to make it in time.
+so what we've done is just a fingerspelling classifier that classifies the signs of the arabic alphabet and print it on the console.
+
+Thank you for your time. and for letting us have this opportunity to know about computer vision, and AI field.
