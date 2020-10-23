@@ -17,7 +17,6 @@ arabicnames = ["ع","ال","ا","ب","د","ظ","ض","ف","ق","غ","ح","ه","ج
 
 
 while True:
-    
 	_,frame = cap.read()
 	frame = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
 	frame = cv.flip(frame,1)
@@ -31,4 +30,6 @@ while True:
 	if np.amax(prediction) > 0.4:
 		print(arabicnames[np.argmax(prediction)])
 		print(class_names[np.argmax(prediction)])
-
+	#the program is stopped when the 'q' button is pressed
+	if cv.waitKey(1) & 0xFF == ord('q'):
+		break
